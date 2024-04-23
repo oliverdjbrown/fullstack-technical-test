@@ -4,7 +4,7 @@ const expressListEndpoints = require("express-list-endpoints");
 const { dbConnection } = require("../../config");
 const { api } = require("../../constants");
 
-const defaultPort = 3000;
+const defaultPort = 8080;
 
 class Server {
   constructor() {
