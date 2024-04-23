@@ -1,0 +1,45 @@
+<div class="container text-center mt-3">
+  <div class="row">
+    <div class="col-6">
+      <div class="mb-3">
+        <input type="text" id="search" class="form-control" [formControl]="employeeId" placeholder="ID Number">
+      </div>
+    </div>
+    <div class="col-6 text-start">
+      <button type="button" class="btn btn-primary me-2" (click)="getEmployeeById()">
+        Search
+      </button>
+      <button type="button" class="btn btn-danger" (click)="clear()">
+        Clear
+      </button>
+    </div>
+    <div class="col-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Birth</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees; index as i">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{employee.id}}</td>
+            <td>{{employee.fullName}}</td>
+            <td>{{employee.birth | date: 'yyyy-MM-dd'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-12">
+    <div *ngIf="showNotIdAlert" class="alert alert-warning" role="alert">
+      You need to enter an ID number
+    </div>
+    <div *ngIf="showNotFoundAlert" class="alert alert-warning" role="alert">
+      Employee not found
+    </div>
+  </div>
+</div>
