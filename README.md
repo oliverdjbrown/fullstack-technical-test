@@ -1,4 +1,4 @@
-# Fullstack Technical Test
+# Kriegspieltech FullStack Technical Test
 
 This repository contains the Fullstack Technical Test project.
 
