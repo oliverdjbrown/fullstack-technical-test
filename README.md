@@ -2,6 +2,20 @@
 
 This repository contains the Fullstack Technical Test project.
 
+## Description
+
+Website page to query an employee record, the user must enter employee ID (like DNI,
+passport ID, etc), have a query button and clear button. After query the screen will show a
+table/fields with the employee's data as result (use only, full name, birth, id).
+Tips:
+1. Organize the code correctly as you usually do to have clear architecture app (code and files)
+2. Build the UI and the code necessary to make the call to the backend and in the backend side
+use mock data (with 3-4 records)
+3. If the employee does not exist, display the message.
+4. Add some unit tests (2 would be good) on top of the developed code (in frontend side and
+backend side)
+5. Clear button must clear input field and result.
+
 ## Frontend Angular
 Angular is a single-platform web application development framework that uses TypeScript to create dynamic and scalable client-side applications. With features such as reusable components, routing, and state management, Angular enables the construction of modern web applications with an excellent user experience. Its strong community and detailed documentation make it a popular choice for developers.
 
